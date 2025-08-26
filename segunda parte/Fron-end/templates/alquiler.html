@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SENA Bici - Alquiler</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        
+       
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="/static/img/logo.webp" alt="logo sena" width="80">
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="mapa.html">Mapa</a>
+                <a href="alquiler.html" class="active">Alquiler</a>
+                <a href="eventos.html">Eventos</a>
+            </div>
+            <a href="perfil.html" class="user-icon">
+                <i class="fas fa-user-circle"></i>
+            </a>
+        </nav>
+    </header>
+    
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <div class="alquiler-container">
+            <h1 class="alquiler-title">Solicitar Alquiler</h1>
+            
+            <form id="form-alquiler">
+                <div class="form-group">
+                    <div class="form-row">
+                        <div class="form-column">
+                            <label for="fecha-recogida">Fecha de recogida</label>
+                            <input type="date" id="fecha-recogida" name="fecha-recogida" required>
+                        </div>
+                        <div class="form-column">
+                            <label for="hora-recogida">Hora de recogida</label>
+                            <input type="time" id="hora-recogida" name="hora-recogida" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-column">
+                            <label for="fecha-devolucion">Fecha de devolución</label>
+                            <input type="date" id="fecha-devolucion" name="fecha-devolucion" required>
+                        </div>
+                        <div class="form-column">
+                            <label for="hora-devolucion">Hora de devolución</label>
+                            <input type="time" id="hora-devolucion" name="hora-devolucion" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn-solicitar">Confirmar Alquiler</button>
+            </form>
+        </div>
+    </main>
+    
+    <!-- FOOTER -->
+    <footer>
+        <p>SENA Bici</p>
+        <a href="#"><i class="fab fa-facebook"></i> Facebook</a> | 
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a> | 
+        <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    </footer>
+
+    
+</body>
+</html>
